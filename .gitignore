@@ -50,4 +50,3 @@ app.*.symbols
 app.*.map.json
 
 *.iml
-packages/
