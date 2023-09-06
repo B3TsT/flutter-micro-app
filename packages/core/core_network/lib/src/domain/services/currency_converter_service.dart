@@ -6,8 +6,10 @@ import '../models/models.dart';
 
 part 'currency_converter_service.chopper.dart';
 
+@injectable
 @ChopperApi(baseUrl: CurrencyEndpoints.currencyAPI)
 abstract class CurrencyApiService extends ChopperService {
+  @factoryMethod
   static CurrencyApiService create(ApiClient client) {
     return _$CurrencyApiService(client);
   }

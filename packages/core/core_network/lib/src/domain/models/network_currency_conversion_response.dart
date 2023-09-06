@@ -4,19 +4,19 @@ import 'package:core_dependencies/core_dependencies.dart';
 
 class NetworkCurrencyConversionResponse extends Equatable {
   const NetworkCurrencyConversionResponse({
-    this.baseCurrencyCode,
-    this.baseCurrencyName,
-    this.amount,
-    this.updatedDate,
-    this.rates,
-    this.status,
+    required this.baseCurrencyCode,
+    required this.baseCurrencyName,
+    required this.amount,
+    required this.updatedDate,
+    required this.rates,
+    required this.status,
   });
-  final String? baseCurrencyCode;
-  final String? baseCurrencyName;
-  final String? amount;
-  final DateTime? updatedDate;
-  final HashMap<String, Rates>? rates;
-  final String? status;
+  final String baseCurrencyCode;
+  final String baseCurrencyName;
+  final String amount;
+  final DateTime updatedDate;
+  final HashMap<String, Rates> rates;
+  final String status;
 
   @override
   List<Object?> get props => [
