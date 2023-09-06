@@ -1,4 +1,4 @@
-import 'package:core_network/src/domain/models/models.dart';
+import '../../../../domain/domain.dart';
 
 typedef JsonFactory<T> = T Function(Map<String, dynamic> json);
 

@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:core_dependencies/core_dependencies.dart';
-import 'package:core_network/src/core/utils/http/converters/json_type_parser.dart';
+
+import '../../utils.dart';
 
 class JsonSerializableConverter extends JsonConverter {
   const JsonSerializableConverter();
